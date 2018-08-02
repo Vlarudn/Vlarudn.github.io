@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,700" rel="stylesheet">
+</head>
+<body>
+<div class="wrap">
+    <div class="start-game">
+        <h2 class="name-label">ENTER YOUR NAME</h2>
+        <input class="player-name" type="text">
+        <div class="change-dificult">
+            <input name="check" id="checkBox1" type="radio" value="1" checked>
+            <label for="checkBox1">Simple</label>
+            <input name="check" id="checkBox2" type="radio" value="2">
+            <label for="checkBox2">Normal</label>
+            <input name="check" id="checkBox3" type="radio" value="3">
+            <label for="checkBox3">Hard</label>
+        </div>
+        <button class="start">Start<br>Game</button>
+
+
+        <div class="chooseTheme">You can choose a theme <br>
+            <input name="theme" id="themeRadio1" type="radio" value="1" checked>
+            <label for="themeRadio1">first</label>
+            <input name="theme" id="themeRadio2" type="radio" value="2">
+            <label for="themeRadio2">second</label>
+            <input name="theme" id="themeRadio3" type="radio" value="3">
+            <label for="themeRadio3">third</label>
+        </div>
+
+    </div>
+
+    <div class="game-wrap">
+        <div class="options">
+            <div class="player"></div>
+            <div class="timer-wrap">
+                <label for="timer"> Time: </label>
+                <div id="timer">0</div>
+            </div>
+            <button class="restart-game">Restart</button>
+        </div>
+
+        <div class="game">
+
+        </div>
+    </div>
+    <div class="modal-overlay">
+        <div class="modal">
+            <h2 class="winner">YOU WIN!</h2>
+            <div class="pre-result"></div>
+            <div class="result"></div>
+            <button class="restart">Play Again?</button>
+        </div>
+    </div>
+    <footer>
+        <p class="disclaimer">Designed & Developed by DreamTeam ©</p>
+    </footer>
+</div><!-- End Wrap -->
+<script src="dist/libs/soundmanager2-jsmin.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="dist/js/scripts.min.js"></script>
+</body>
+</html>
